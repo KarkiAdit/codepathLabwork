@@ -1,0 +1,25 @@
+:root {
+  background-color: var(--primary-background-color);
+  color: var(--primary-font-color);
+}
+.header-content {
+  position: relative;
+  background-image: url("./components/images/cricket-background.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.overlay-template {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary-card-color);
+}
+h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 3rem;
+}
