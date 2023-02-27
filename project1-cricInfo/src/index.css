@@ -1,25 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   background-color: var(--primary-background-color);
   color: var(--primary-font-color);
 }
+
 .header-content {
   position: relative;
-  background-image: url("./components/images/cricket-background.jpg");
+  background-image: url("images/cricket-background.jpg");
   background-size: cover;
   height: 100vh;
   overflow: hidden;
 }
+
 .overlay-template {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--primary-card-color);
+  background: rgba(232, 220, 241, 0.7);
 }
-h1 {
+
+.header-content h1 {
   position: relative;
   text-align: center;
   margin-top: 40vh;
   font-size: 3rem;
 }
+
+.header-content p{
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+
+}
+
+.container {
+  width: 95%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  width: 300px;
+  min-width: 250px;
+  height: 400px;
+  max-height: 400px;
+  padding: 0 1rem 1rem 1rem;
+  margin: 1rem;
+  background-color: var(--primary-card-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(154, 25, 25, 0.3);
+  overflow: hidden;
+}
+
+.card-content:hover{
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.2s;
+}
+
+.container img{
+  min-height: 60%;
+}
+
+.container h2 {
+  color: var(--secondary-font-color);
+  margin: 0.75rem;
+  font-size: 1.25rem;
+  font-family: 'Climate Crisis', cursive;
+  font-weight: 100px;
+}
+
+.container p{
+  line-height: 1.5rem;
+  max-height: 10%;
+  text-overflow: hidden;
+  margin: 0;
+}
+
+.container button{
+  font-size: 1.15rem;
+  width: 38%;
+  padding: 0.65rem;
+  color: #f0eae3;
+  background-color: #8b8bc9;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container button:hover{
+  background-color: blue;
+  box-shadow: 15px 15px 15px 15px rgb(234 233 233 / 50%);
+}
+
